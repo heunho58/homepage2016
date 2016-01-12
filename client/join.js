@@ -19,7 +19,7 @@ Template.join.events({
 
         var obj = {};
         obj.작성자 = "admin";
-        obj.내용 = "[" + Meteor.user().username + "] 님이 회원가입하셨습니다." + $.now();
+        obj.내용 = "[" + options.username + "] 님이 회원가입하셨습니다." + $.now();
         Logs.insert(obj);
 
         Accounts.createUser(options, function (err) {
