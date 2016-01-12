@@ -1,0 +1,24 @@
+a{
+    text-decoration : none;
+}
+#indexHeader{
+    border-top : 1px solid darkgray;
+}
+#logoImg{
+    width : 1000px;
+    height : 200px;
+    margin : 0 auto;
+}
+#navOnHeader{
+    text-align : center;
+    border : 1px solid black;
+    border-bottom : 0;
+    margin : 0 auto;
+}
+#navOnHeader *{
+    margin : 0px 50px;
+    color : black;
+    font-size : 40px;
+    font-weight : bold;
+    display : inline;
+}

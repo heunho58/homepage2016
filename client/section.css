@@ -1,0 +1,12 @@
+#wrapper{
+    padding : 5px;
+    text-align : center;
+}
+#indexSession{
+    /*padding : 10px;*/
+    border : 1px solid black;
+}
+#contentTemplate{
+    margin : 0px auto;
+    padding : 10px;
+}

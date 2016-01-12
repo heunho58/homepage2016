@@ -1,0 +1,15 @@
+<template name="log">
+    <table>
+        <tr>
+            <td>작성자</td>
+            <td>내용</td>
+        </tr>
+
+        {{#each logs}}
+            <tr>
+                <td>{{작성자}}</td>
+                <td>{{내용}}</td>
+            </tr>
+        {{/each}}
+    </table>
+</template>

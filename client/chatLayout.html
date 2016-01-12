@@ -1,0 +1,62 @@
+<!--<template name="chat">-->
+<!--<input name="send"/>-->
+<!--<ul>-->
+        <!--{{#each messages}}-->
+<!--<li>-->
+<!--{{sender}} : {{message}}-->
+<!--</li>-->
+        <!--{{/each}}-->
+<!--</ul>-->
+<!--</template>-->
+
+<template name="chat">
+    <div id="wrapper">
+        {{#if currentUser}}
+            <div id="background">
+                <div id="chatList">
+                    <div id="list">
+                        활성화 채팅 리스트
+                        <a href="#">x</a>
+                    </div>
+                    <div id="button">
+                        <button type="button">+</button>
+                    </div>
+                </div>
+
+                <div id="view">
+                    {{#each messages}}
+                        <div id="viewNickName">
+                            {{닉네임}}
+                        </div>
+                        <div id="viewMessage">
+                            : {{message}}
+                        </div>
+                    {{/each}}
+                </div>
+
+                <div id="participant">참여자 <br>
+                    <div id="gender">
+                        성별
+                    </div>
+                    <div id="sideNickName">
+                        닉네임
+                    </div>
+                </div>
+
+                <div id="messageInput">
+                    <div id="inputNickName">
+                        <a href="#">{{닉네임}}</a>
+                    </div>
+                    <div id="message">
+                        <input name="send" type="text" placeholder="텍스트를 입력하시오 ...">
+                    </div>
+                    <div id="submitButton">
+                        <button name="submitButton" type="submit">전송</button>
+                    </div>
+                </div>
+            </div>
+        {{else}}
+            <h1>로그인이 필요한 기능입니다. 로그인해주시기 바랍니다.</h1>
+        {{/if}}
+    </div>
+</template>

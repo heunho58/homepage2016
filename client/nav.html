@@ -1,0 +1,39 @@
+<template name="nav">
+    <!--nav : PageName, AccountInfo, Join/Login-->
+    <nav>
+        <div id="indexNav">
+            <!--PageName-->
+            <div id="pageName">
+                pageName
+            </div>
+
+            <!--AccountInfo-->
+            <div id="accountInfo">
+                <!--personal Info-->
+                <div id="personalInfo">
+                    개인 정보
+                </div>
+                <!--friend Info-->
+                <div id="friendInfo">
+                    친구 정보
+                </div>
+            </div>
+
+
+            <!--Join/Login-->
+            <div id="joinLogin">
+                {{#if currentUser}}
+                    <!--Logout-->
+                    <div id="logoutOnNav">
+                        <a name="logout" href="#">로그아웃</a>
+                    </div>
+                {{else}}
+                    <!--Join-->
+                    <div id="joinOnNav">
+                        <a href="join.html">회원 가입</a>
+                    </div>
+                {{/if}}
+            </div>
+        </div>
+    </nav>
+</template>

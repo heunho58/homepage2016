@@ -1,0 +1,36 @@
+<template name="board">
+    <div>
+        <a href="boardWrite.html">
+            <button>글작성</button>
+        </a>
+    </div>
+    <table>
+        <caption>게시판</caption>
+        <thead>
+        <tr>
+            <th></th>
+            <th>제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>추천</th>
+            <th></th>
+        </tr>
+        </thead>
+        <tbody>
+        {{#each boards}}
+            <tr>
+                <td>{{글번호}}</td>
+                <td>{{제목}}</td>
+                <td>{{작성자}}</td>
+                <td>{{작성일}}</td>
+                <td>{{추천}}</td>
+                <td>
+                    <!--{{#if {{check}} }}-->
+                    <button id="remove">x</button>
+                    <!--{{/if}}-->
+                </td>
+            </tr>
+        {{/each}}
+        </tbody>
+    </table>
+</template>

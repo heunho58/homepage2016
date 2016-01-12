@@ -1,0 +1,38 @@
+#indexNav{
+    display : inline-block;
+    position : relative;
+    top : 10px;
+    width : 100%;
+    min-height : 70px;
+    max-height : 70px;
+    /*border : 1px solid black;*/
+}
+#indexNav * {
+    display : inline;
+    vertical-align : bottom;
+}
+#pageName{
+    padding-left : 10px;
+    font-size : 40px;
+    font-weight : bold;
+}
+#accountInfo{
+    font-size : 15px;
+    font-weight : bold;
+}
+#accountInfo *{
+    padding-right : 5px;
+}
+#joinLogin{
+    margin : 35px 10px;
+    float : right;
+    font-size : 15px;
+    text-align : right;
+}
+#joinLogin *{
+    padding-right : 5px;
+}
+#joinLogin a{
+    color : gray;
+    text-decoration : none;
+}

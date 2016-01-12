@@ -1,0 +1,44 @@
+#loginUi{
+    display : inline-block;
+    position : relative;
+    flow : left;
+    margin-left : 20px;
+    margin-top : 20px;
+    padding : 5px;
+    padding-top : 0px;
+    border : 1px solid black;
+    vertical-align : top;
+}
+#loginUi *{
+    margin : 0px;
+}
+#userInput{
+    display : inline-block;
+}
+#userInput input{
+    text-align : center;
+    min-width : 180px;
+    max-width : 180px;
+    min-height : 14px;
+    max-height : 14px;
+}
+#loginButton{
+    position : relative;
+    display : inline;
+    min-height : 44px;
+    top : -11px;
+    left : -4px;
+}
+#loginUihelper{
+    padding : 3px;
+    padding-top : 0px;
+    /*margin-right : 4px;*/
+    margin : 0px;
+    font-size : 10px;
+    display : block;
+    text-align : right;
+}
+#loginUihelper a{
+    color : gray;
+    text-decoration : none;
+}

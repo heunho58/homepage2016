@@ -1,0 +1,72 @@
+#wrapper{
+    margin : auto;
+}
+*{
+    text-align : left;
+}
+#background{
+    padding : 10px;
+    border : 1px solid black;
+}
+#chatList{
+    width : 730px;
+    margin-bottom : 0px;
+    padding : 0px;
+}
+#list{
+    border : 1px solid black;
+    display : inline;
+}
+#button{
+    margin : 1px;
+    display : inline;
+}
+#view{
+    padding-top : 10px;
+    border : 1px solid black;
+    padding-left : 30px;
+    display : inline-block;
+    width : 700px;
+    min-height : 500px;
+    max-height : 500px;
+    overflow : scroll;
+}
+#viewNickName{
+    width : 100px;
+    display : inline;
+}
+#viewMessage{
+    width : 600px;
+    display : inline-block;
+}
+#participant{
+    padding-top : 10px;
+    border : 1px solid black;
+    width : 200px;
+    height : 500px;
+    display : inline-block;
+    float : right;
+}
+#gender{
+    width : 40px;
+    display : inline;
+}
+#sideNickName{
+    min-width : 100px;
+    display : inline;
+}
+#messageInput{
+    border : 1px solid black;
+    padding : 5px;
+    display : inline-block;
+    width : 720px;
+}
+#inputNickName, #message, #submitButton{
+    display : inline;
+}
+#inputNickName{
+    min-width : 100px;
+}
+#message input{
+    min-width : 550px;
+}

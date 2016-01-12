@@ -1,0 +1,22 @@
+<template name="aside">
+    <!--aisde : LoginUi, RecentWork-->
+    <aside>
+        <div id="indexAside">
+            <!--Login : Id InputBox, Password InputBox, Login Button, Join Link, Account Seek Link-->
+
+            <!--if(login)-->
+            {{#if currentUser}}
+                {{>userInfo}}
+            {{else}}
+                {{>login}}
+            {{/if}}
+
+            <!--else-->
+
+            <!--RecentWork-->
+            <div id="recentWork">
+                {{> log}}
+            </div>
+        </div>
+    </aside>
+</template>

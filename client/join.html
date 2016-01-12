@@ -1,0 +1,50 @@
+<template name="join">
+    <div>
+        <h2 name="title">회원가입</h2>
+        <form>
+            <fieldset>
+                <div id="wrapper">
+                    <div>
+                        <input id="inputName" name="Name" type="text" value="" maxlength="20" placeholder="이름">
+                    </div>
+                    <div>
+                        <input id="inputID" name="ID" type="text" value="" maxlength="20" placeholder="아이디">
+                    </div>
+                    <div>
+                        <input id="inputPW" name="PW" type="password" maxlength="16" placeholder="비밀번호" >
+                    </div>
+                    <div>
+                        <span class="gender"><input type="radio" name="gender" id="man" value="0"/>남자</span>
+                        <span class="gender"><input type="radio" name="gender" id="woman" value="1"/>여자</span>
+                    </div>
+                    <div name="Birth">
+                        <input id="YYYY" name="Y" type="text" maxlength="4" value="" placeholder="년(4자)">
+                        <select id="MM" name="M" title="월">
+                            <option value="">월</option>
+                            <option value="1" >1</option>
+                            <option value="2" >2</option>
+                            <option value="3" >3</option>
+                            <option value="4" >4</option>
+                            <option value="5" >5</option>
+                            <option value="6" >6</option>
+                            <option value="7" >7</option>
+                            <option value="8" >8</option>
+                            <option value="9" >9</option>
+                            <option value="10" >10</option>
+                            <option value="11" >11</option>
+                            <option value="12" >12</option>
+                        </select>
+                        <input id="DD" name="D" type="text" maxlength="2" value="" placeholder="일">
+                    </div>
+                    <div>
+                        <input id="email" type="text" maxlength="100" value="" placeholder="이메일" class="int">
+                    </div>
+                </div>
+                <div name="Button">
+                    <a href="/"><input id="btnJoin" name="Submit" type="submit" value="가입"></a>
+                    <input name="Reset" type="reset" value="취소">
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</template>

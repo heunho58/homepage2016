@@ -1,0 +1,27 @@
+h2[name="title"]{
+    text-align : center;
+}
+fieldset{
+    margin : 5px auto;
+    width : 280px;
+}
+input[name="Name"], input[name="ID"], input[name="PW"], input[name="EMail"]{
+    margin : 5px;
+    width : 240px;
+}
+div[name="Birth"]{
+    margin : 5px;
+}
+input[name="Y"]{
+    width : 105px;
+}
+select[name="M"], input[name="D"]{
+    width : 60px;
+}
+input[name="Submit"], input[name="Reset"]{
+    margin : 0px auto;
+}
+div[name="Button"]{
+    text-align : center;
+    margin : 0px auto;
+}
