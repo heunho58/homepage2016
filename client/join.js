@@ -20,8 +20,9 @@ Template.join.events({
         }
 
         Accounts.createUser(options, function (err) {
-            if (err)
+            if (err) {
                 return alert(err);
+            }
         });
 
         Meteor.loginWithPassword(id, password);

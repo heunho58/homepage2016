@@ -11,6 +11,12 @@ Template.login.events({
             return alert('PW를 입력해주세요.');
         }
 
+        Meteor.loginWithPassword(ID, PW);
+
+        if(!Meteor.user()){
+            return alert('로그인 실패');
+        }
+
         var obj = {};
         var time = new Date();
         var tmpTime = time.getFullYear() + '/' + (time.getMonth()+1) + '/' + time.getDate() + '/'
@@ -20,6 +26,5 @@ Template.login.events({
         obj.내용 = "[" + ID + "] 님이 로그인 하셨습니다.";
         obj.시간 = tmpTime;
         Logs.insert(obj);
-        Meteor.loginWithPassword(ID, PW);
     }
 })
