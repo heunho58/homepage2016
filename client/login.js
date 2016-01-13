@@ -12,8 +12,13 @@ Template.login.events({
         }
 
         var obj = {};
+        var time = new Date();
+        var tmpTime = time.getFullYear() + '/' + (time.getMonth()+1) + '/' + time.getDate() + '/'
+            + time.getHours()+':'+ time.getMinutes()+':'+time.getSeconds();
+
         obj.작성자 = "admin";
-        obj.내용 = "[" + ID + "] 님이 로그인 하셨습니다." + $.now();
+        obj.내용 = "[" + ID + "] 님이 로그인 하셨습니다.";
+        obj.시간 = tmpTime;
         Logs.insert(obj);
         Meteor.loginWithPassword(ID, PW);
     }

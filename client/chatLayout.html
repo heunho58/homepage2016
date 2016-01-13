@@ -1,14 +1,3 @@
-<!--<template name="chat">-->
-<!--<input name="send"/>-->
-<!--<ul>-->
-        <!--{{#each messages}}-->
-<!--<li>-->
-<!--{{sender}} : {{message}}-->
-<!--</li>-->
-        <!--{{/each}}-->
-<!--</ul>-->
-<!--</template>-->
-
 <template name="chat">
     <div id="wrapper">
         {{#if currentUser}}
@@ -25,11 +14,13 @@
 
                 <div id="view">
                     {{#each messages}}
-                        <div id="viewNickName">
-                            {{닉네임}}
-                        </div>
-                        <div id="viewMessage">
-                            : {{message}}
+                        <div id="eachMessage">
+                            <div id="viewNickName">
+                                {{sender}}
+                            </div>
+                            <div id="viewMessage">
+                                : {{message}} - <span id="time">{{time}}</span><br>
+                            </div>
                         </div>
                     {{/each}}
                 </div>
@@ -45,7 +36,7 @@
 
                 <div id="messageInput">
                     <div id="inputNickName">
-                        <a href="#">{{닉네임}}</a>
+                        <a href="#">{{writer}}</a>
                     </div>
                     <div id="message">
                         <input name="send" type="text" placeholder="텍스트를 입력하시오 ...">

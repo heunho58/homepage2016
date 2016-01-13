@@ -26,14 +26,15 @@
     border : 1px solid black;
     padding-left : 30px;
     display : inline-block;
-    width : 700px;
+    width : 690px;
     min-height : 500px;
     max-height : 500px;
-    overflow : scroll;
+    overflow: auto;
 }
 #viewNickName{
     width : 100px;
     display : inline;
+    font-weight : bold;
 }
 #viewMessage{
     width : 600px;
@@ -59,7 +60,7 @@
     border : 1px solid black;
     padding : 5px;
     display : inline-block;
-    width : 720px;
+    width : 710px;
 }
 #inputNickName, #message, #submitButton{
     display : inline;
@@ -68,5 +69,9 @@
     min-width : 100px;
 }
 #message input{
-    min-width : 550px;
+    min-width : 540px;
+}
+#time{
+    color : darkgray;
+    font-size : small;
 }

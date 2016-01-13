@@ -1,25 +1,18 @@
-<!--<template name="login">-->
-<!--&lt;!&ndash;LoginUi&ndash;&gt;-->
-<!--<div id="loginUi">-->
-<!--로그인<br>-->
-<!--<div id="userInput">-->
-<!--&lt;!&ndash;Id InputBox&ndash;&gt;-->
-<!--<input id="ID" type="text" placeholder="id"><br>-->
-<!--&lt;!&ndash;Password InputBox&ndash;&gt;-->
-<!--<input id="PW" type="text" placeholder="password">-->
-<!--&lt;!&ndash;Login Button&ndash;&gt;-->
-<!--</div>-->
-<!--<button name="loginButton">Login</button>-->
-<!--<div id="loginUihelper">-->
-<!--&lt;!&ndash;Join Link&ndash;&gt;-->
-<!--<a id="joinLink" href="join.html">회원가입</a>-->
-<!--&lt;!&ndash;Account Seek link&ndash;&gt;-->
-<!--<a id="accountSeekLink" href="">id/password 찾기</a>-->
-<!--</div>-->
-<!--</div>-->
-<!--</template>-->
 <template name="userInfo">
-    <div id="wrapper">
-        <h1 style="display : inline;">login 완료</h1>
-    </div>
+    <!--userInfoUi-->
+   <div id="userWrap">
+       로그인 완료<br>
+       <div>
+           <span>아이디 : {{ID}}</span>
+       </div>
+       <div>
+           <span>이름 : {{Name}}</span>
+       </div>
+       <div>
+           <span>성별 : {{Gender}}</span>
+       </div>
+       <div>
+           <span>이메일 : {{Email}}</span>
+       </div>
+   </div>
 </template>

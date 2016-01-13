@@ -14,6 +14,7 @@
             <th>작성일</th>
             <th>추천</th>
             <th></th>
+            <th></th>
         </tr>
         </thead>
         <tbody>
@@ -25,9 +26,13 @@
                 <td>{{작성일}}</td>
                 <td>{{추천}}</td>
                 <td>
-                    <!--{{#if {{check}} }}-->
                     <button id="remove">x</button>
-                    <!--{{/if}}-->
+                </td>
+                <td>
+                    <button id="plusButton">+</button>
+                </td>
+                <td>
+                    <button id="minusButton">-</button>
                 </td>
             </tr>
         {{/each}}
