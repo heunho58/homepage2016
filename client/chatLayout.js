@@ -30,7 +30,8 @@ Template.chat.events({
         obj.message = message;
         obj.message = obj.message + $.now();
         Chatting.insert(obj);
-        $("#viewNickName").scrollTop(0);
+
+        $("[name=send]").val('');
     }
 })
 

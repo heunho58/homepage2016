@@ -10,6 +10,7 @@
     margin-left : 20px;
     padding : 5px;
     min-width : 600px;
+    max-width : 600px;
     min-height : 180px;
     max-height : 180px;
     overflow : scroll;
