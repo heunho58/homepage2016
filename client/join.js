@@ -21,22 +21,24 @@ Template.join.events({
 
         Accounts.createUser(options, function (err) {
             if (err) {
+                console.log(err);
+                console.log('회원가입 실패 로그')
                 return alert(err);
             }
+            else{
+                Meteor.loginWithPassword(id, password);
+                alert('회원가입하셨습니다. 로그인시켜 드리겠습니다. 환영합니다');
+
+                var time = new Date();
+                var tmpTime = time.getFullYear() + '/' + (time.getMonth()+1) + '/' + time.getDate() + '/'
+                    + time.getHours()+':'+ time.getMinutes()+':'+time.getSeconds();
+                var obj = {};
+                obj.작성자 = "admin";
+                obj.내용 = "[" + options.username + "] 님이 회원가입하셨습니다.";
+                obj.시간 = tmpTime;
+
+                Logs.insert(obj);
+            }
         });
-
-        Meteor.loginWithPassword(id, password);
-        alert('회원가입하셨습니다. 로그인시켜 드리겠습니다. 환영합니다');
-
-        var time = new Date();
-        var tmpTime = time.getFullYear() + '/' + (time.getMonth()+1) + '/' + time.getDate() + '/'
-            + time.getHours()+':'+ time.getMinutes()+':'+time.getSeconds();
-        var obj = {};
-        obj.작성자 = "admin";
-        obj.내용 = "[" + options.username + "] 님이 회원가입하셨습니다.";
-        obj.시간 = tmpTime;
-
-        Logs.insert(obj);
     }
-
 });
